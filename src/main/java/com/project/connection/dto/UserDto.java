@@ -1,15 +1,15 @@
 package com.project.connection.dto;
 
 public class UserDto {
- int id;
- String name;
- String about;
- String idea;
- int age;
- String location;
- String experience;
- String interested;
- String education;
+    int id;
+    String name;
+    String about;
+    String idea;
+    int age;
+    String location;
+    String experience;
+    String interested;
+    String education;
 
     public int getId() {
         return id;

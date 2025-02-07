@@ -11,17 +11,17 @@ public class UserEntity {
     int id;
     @Column(name = "name")
     String name;
-    @Column(name="about")
+    @Column(name = "about")
     String about;
-    @Column(name="idea")
+    @Column(name = "idea")
     String idea;
-    @Column(name="age")
+    @Column(name = "age")
     int age;
-    @Column(name="location")
+    @Column(name = "location")
     String location;
-    @Column(name="experience")
+    @Column(name = "experience")
     String experience;
-    @Column(name="interested")
+    @Column(name = "interested")
     String interested;
     @Column(name = "education")
     String education;
