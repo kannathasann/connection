@@ -25,8 +25,7 @@ public class ProfileServiceImpl implements ProfileService {
     ProfileRepo profileRepo;
     @Autowired
     UserRepo userRepo;
-    @Autowired
-    ProfileResponse profileResponse;
+
 
     @Autowired
     UtilityClass utilityClass;
@@ -72,6 +71,7 @@ public class ProfileServiceImpl implements ProfileService {
 
     @Override
     public ProfileResponse viewProfile(int id) {
+        ProfileResponse profileResponse= new ProfileResponse();
         User user = userRepo.findById(id).orElseThrow();
         profileResponse.setUser(user);
         Profile profile = profileRepo.findByUserId(id);
